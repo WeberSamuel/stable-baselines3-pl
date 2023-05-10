@@ -7,19 +7,19 @@ import numpy as np
 import pytest
 import torch as th
 
-from stable_baselines3 import DDPG, DQN, SAC, TD3, HerReplayBuffer
-from stable_baselines3.common.env_util import make_vec_env
-from stable_baselines3.common.envs import BitFlippingEnv
-from stable_baselines3.common.evaluation import evaluate_policy
-from stable_baselines3.common.monitor import Monitor
-from stable_baselines3.common.noise import NormalActionNoise
-from stable_baselines3.common.vec_env import SubprocVecEnv
-from stable_baselines3.her.goal_selection_strategy import GoalSelectionStrategy
+from stable_baselines3_pl import DDPG, DQN, SAC, TD3, HerReplayBuffer
+from stable_baselines3_pl.common.env_util import make_vec_env
+from stable_baselines3_pl.common.envs import BitFlippingEnv
+from stable_baselines3_pl.common.evaluation import evaluate_policy
+from stable_baselines3_pl.common.monitor import Monitor
+from stable_baselines3_pl.common.noise import NormalActionNoise
+from stable_baselines3_pl.common.vec_env import SubprocVecEnv
+from stable_baselines3_pl.her.goal_selection_strategy import GoalSelectionStrategy
 
 
 def test_import_error():
     with pytest.raises(ImportError) as excinfo:
-        from stable_baselines3 import HER
+        from stable_baselines3_pl import HER
 
         HER("MlpPolicy")
     assert "documentation" in str(excinfo.value)

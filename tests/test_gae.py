@@ -6,10 +6,10 @@ import pytest
 import torch as th
 from gymnasium import spaces
 
-from stable_baselines3 import A2C, PPO, SAC
-from stable_baselines3.common.callbacks import BaseCallback
-from stable_baselines3.common.env_checker import check_env
-from stable_baselines3.common.policies import ActorCriticPolicy
+from stable_baselines3_pl import A2C, PPO, SAC
+from stable_baselines3_pl.common.callbacks import BaseCallback
+from stable_baselines3_pl.common.env_checker import check_env
+from stable_baselines3_pl.common.policies import ActorCriticPolicy
 
 
 class CustomEnv(gym.Env):

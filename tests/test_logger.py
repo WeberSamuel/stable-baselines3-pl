@@ -14,9 +14,9 @@ from gymnasium import spaces
 from matplotlib import pyplot as plt
 from pandas.errors import EmptyDataError
 
-from stable_baselines3 import A2C, DQN
-from stable_baselines3.common.env_checker import check_env
-from stable_baselines3.common.logger import (
+from stable_baselines3_pl import A2C, DQN
+from stable_baselines3_pl.common.env_checker import check_env
+from stable_baselines3_pl.common.logger import (
     DEBUG,
     INFO,
     CSVOutputFormat,

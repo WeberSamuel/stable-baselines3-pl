@@ -6,11 +6,11 @@ import numpy as np
 import pytest
 from gymnasium import spaces
 
-from stable_baselines3 import SAC, TD3, HerReplayBuffer
-from stable_baselines3.common.envs import FakeImageEnv
-from stable_baselines3.common.monitor import Monitor
-from stable_baselines3.common.running_mean_std import RunningMeanStd
-from stable_baselines3.common.vec_env import (
+from stable_baselines3_pl import SAC, TD3, HerReplayBuffer
+from stable_baselines3_pl.common.envs import FakeImageEnv
+from stable_baselines3_pl.common.monitor import Monitor
+from stable_baselines3_pl.common.running_mean_std import RunningMeanStd
+from stable_baselines3_pl.common.vec_env import (
     DummyVecEnv,
     VecFrameStack,
     VecNormalize,

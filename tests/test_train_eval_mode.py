@@ -6,9 +6,9 @@ import pytest
 import torch as th
 import torch.nn as nn
 
-from stable_baselines3 import A2C, DQN, PPO, SAC, TD3
-from stable_baselines3.common.preprocessing import get_flattened_obs_dim
-from stable_baselines3.common.torch_layers import BaseFeaturesExtractor
+from stable_baselines3_pl import A2C, DQN, PPO, SAC, TD3
+from stable_baselines3_pl.common.preprocessing import get_flattened_obs_dim
+from stable_baselines3_pl.common.torch_layers import BaseFeaturesExtractor
 
 MODEL_LIST = [
     PPO,

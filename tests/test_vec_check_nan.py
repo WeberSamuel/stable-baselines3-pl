@@ -3,7 +3,7 @@ import numpy as np
 import pytest
 from gymnasium import spaces
 
-from stable_baselines3.common.vec_env import DummyVecEnv, VecCheckNan
+from stable_baselines3_pl.common.vec_env import DummyVecEnv, VecCheckNan
 
 
 class NanAndInfEnv(gym.Env):

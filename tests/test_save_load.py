@@ -13,13 +13,13 @@ import numpy as np
 import pytest
 import torch as th
 
-from stable_baselines3 import A2C, DDPG, DQN, PPO, SAC, TD3
-from stable_baselines3.common.base_class import BaseAlgorithm
-from stable_baselines3.common.env_util import make_vec_env
-from stable_baselines3.common.envs import FakeImageEnv, IdentityEnv, IdentityEnvBox
-from stable_baselines3.common.save_util import load_from_pkl, open_path, save_to_pkl
-from stable_baselines3.common.utils import get_device
-from stable_baselines3.common.vec_env import DummyVecEnv
+from stable_baselines3_pl import A2C, DDPG, DQN, PPO, SAC, TD3
+from stable_baselines3_pl.common.base_class import BaseAlgorithm
+from stable_baselines3_pl.common.env_util import make_vec_env
+from stable_baselines3_pl.common.envs import FakeImageEnv, IdentityEnv, IdentityEnvBox
+from stable_baselines3_pl.common.save_util import load_from_pkl, open_path, save_to_pkl
+from stable_baselines3_pl.common.utils import get_device
+from stable_baselines3_pl.common.vec_env import DummyVecEnv
 
 MODEL_LIST = [PPO, A2C, TD3, SAC, DQN, DDPG]
 

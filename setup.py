@@ -2,7 +2,7 @@ import os
 
 from setuptools import find_packages, setup
 
-with open(os.path.join("stable_baselines3", "version.txt")) as file_handler:
+with open(os.path.join("stable_baselines3_pl", "version.txt")) as file_handler:
     __version__ = file_handler.read().strip()
 
 
@@ -98,9 +98,9 @@ extra_packages = extra_no_roms + [  # noqa: RUF005
 
 
 setup(
-    name="stable_baselines3",
-    packages=[package for package in find_packages() if package.startswith("stable_baselines3")],
-    package_data={"stable_baselines3": ["py.typed", "version.txt"]},
+    name="stable_baselines3_pl",
+    packages=[package for package in find_packages() if package.startswith("stable_baselines3_pl")],
+    package_data={"stable_baselines3_pl": ["py.typed", "version.txt"]},
     install_requires=[
         "gymnasium==0.28.1",
         "numpy>=1.20",
@@ -144,9 +144,9 @@ setup(
         "extra": extra_packages,
         "extra_no_roms": extra_no_roms,
     },
-    description="Pytorch version of Stable Baselines, implementations of reinforcement learning algorithms.",
-    author="Antonin Raffin",
-    url="https://github.com/DLR-RM/stable-baselines3",
+    description="Pytorch Lightning version of Stable Baselines, implementations of reinforcement learning algorithms.",
+    author="Weber, Samuel",
+    url="https://github.com/WeberSamuel/stable-baselines3-pl",
     author_email="antonin.raffin@dlr.de",
     keywords="reinforcement-learning-algorithms reinforcement-learning machine-learning "
     "gymnasium gym openai stable baselines toolbox python data-science",
@@ -157,16 +157,9 @@ setup(
     python_requires=">=3.7",
     # PyPI package information.
     project_urls={
-        "Code": "https://github.com/DLR-RM/stable-baselines3",
-        "Documentation": "https://stable-baselines3.readthedocs.io/",
-        "SB3-Contrib": "https://github.com/Stable-Baselines-Team/stable-baselines3-contrib",
-        "RL-Zoo": "https://github.com/DLR-RM/rl-baselines3-zoo",
+        "Code": "https://github.com/WeberSamuel/stable-baselines3-pl",
     },
     classifiers=[
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
     ],
 )

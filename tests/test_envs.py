@@ -6,8 +6,8 @@ import numpy as np
 import pytest
 from gymnasium import spaces
 
-from stable_baselines3.common.env_checker import check_env
-from stable_baselines3.common.envs import (
+from stable_baselines3_pl.common.env_checker import check_env
+from stable_baselines3_pl.common.envs import (
     BitFlippingEnv,
     FakeImageEnv,
     IdentityEnv,

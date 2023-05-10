@@ -1,7 +1,7 @@
 import torch
 from gymnasium import spaces
 
-from stable_baselines3.common.preprocessing import get_obs_shape, preprocess_obs
+from stable_baselines3_pl.common.preprocessing import get_obs_shape, preprocess_obs
 
 
 def test_get_obs_shape_discrete():
